@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Runyu Tian's webpage</title>
+    <style>
+      aside {float: right;}
+    </style>
+    <link rel = "stylesheet" href = "stylenew.css">
+  </head>
+  <body>
+    <main>
+      <h1>Welcome to Runyu Tian's Homepage</h1>
+      <aside><p>Course: <i>CSE134B</i></p></aside>
+      <footer><p>Author: <b>Runyu Tian</b></p>
+      <p>School: <em>UCSD</em></p>
+      </footer>
+      <hr>
+      <nav>
+        <a href="#About">About</a>
+        <br>
+        <a href="#Research"><strong>Research</strong></a>
+        <br>
+        <a href="#Work"><strong>Work Experience</strong></a>
+        <br>
+        <a href="#Resume">Resume</a>
+        <br>
+        <a href="#Transcript">Transcript</a>
+      </nav>
+      <pre>I love python</pre>
+      <code>print("let's get started!")</code>
+
+      <br>
+      <hr>
+      <h2 id="About">About</h2>
+      <div>My name is Runyu Tian, I major in Math-CS</div>
+      
+      <hr>
+      <h2 id="Research">Research</h2>
+      <ul>
+        <li>
+          <details>
+            <summary>research1</summary>
+            <p>did blabla</p>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>research2</summary>
+            <p>did blabla, and bla</p>
+          </details>
+        </li>
+      </ul>
+
+      
+      <hr>
+      <h2 id="Work">Work Experience</h2>
+      <ol>
+        <li>ucsd</li>
+        <li>other place</li>
+      </ol>
+      <iframe src = "https://ucsd.edu/" title:"resume"></iframe>
+      
+      <hr>
+      <h2 id="Resume">Resume</h2>
+      <div>will be here soon</div>
+
+      
+      <hr>
+      <h2 id="Transcript">Transcript</h2>
+      <template> Contents </template>
+      <table>
+        <colgroup><col span = "2"></colgroup>
+        <caption>details below</caption>
+        <tr>
+          <th>course</th>
+          <th>grade</th>
+        </tr>
+        <tr>
+          <td>cse152a</td>
+          <td>A+</td>
+        </tr>
+        <tr>
+          <td>cse158</td>
+          <td>A+</td>
+        </tr>
+      </table>
+      <hr>
+      
+      <h3>Contact form</h3>
+      <form method="post">
+      <label>What's your Name?:
+      <input name="submitted-name" autocomplete="name" />
+      </label>
+      <fieldset>
+        <legend>What's your intention</legend>
+        <input type="radio" id="just to talk">
+        <label for = "just to talk">just to talk</label>
+        <br>
+        <input type="radio" id="recruitment">
+        <label for = "recruitment">recruitment</label>
+      </fieldset>
+      
+      <label for="intention">What do you want to know more:</label>
+      <select id="intention">
+        <optgroup label="Academic">
+          <option>research</option>
+          <option>Transcript</option>
+        </optgroup>
+        <optgroup label="professional">
+          <option>work experience</option>
+          <option>resume</option>
+        </optgroup>
+      </select>
+      <br>
+      <label for="more info">What do you want to tell me</label>
+      <br>
+      <textarea id="moreinfo" name="moreinfo" rows = 3>Please write here</textarea>
+      <br>
+      <label for="advice">How do you think of my website?</label>
+      <input list="advices" name="advice" id="advice">
+        <datalist id="advices">
+          <option value="good">
+          <option value="fine">
+          <option value="bad">
+        </datalist>
+        <br>
+      <button>Save</button>
+      </form>
+      
+      <h2>experiments</h2>
+      <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" />
+      </svg>
+      
+      <br>
+      <picture>
+        <source media="(min-width:700px)" srcset="pc.jpeg">
+        <img src="ucsd.jpeg" alt = "ucsd">
+      </picture>
+      
+      <figure>
+        <img src="cse.jpeg" alt="cse department">
+        <figcaption>UCSD cse department</figcaption>
+      </figure>
+      
+      <p>Here's my favorite song</p>
+      <p>Justin Bieber's "stay", this is just for demonstration purpose only</p>
+      <audio controls>
+      <source src="song.mp3" type="audio/mpeg">
+      </audio>
+      <br>
+      <span>game video</span>
+      <br>
+      <video width="330" height="240" controls>
+      <source src="video.mp4" type="video/mp4">
+      </video>
+      
+      <canvas id="test"></canvas>
+      <script>
+        var buf = document.getElementById("test");
+        var fig = buf.getContext("2d");
+        fig.fillStyle = 'blue';
+        fig.fillRect(0,0,30,30)
+      </script>
+      
+
+      
+    </main>
+  </body>
+</html>
